@@ -27,7 +27,7 @@ const users = {
 module.exports = [
   // user login
   {
-    url: '/ailabel-me/user/login',
+    url: '/user/login',
     type: 'post',
     response: config => {
       const { username, password } = config.body
@@ -52,7 +52,7 @@ module.exports = [
 
   // get user info
   {
-    url: '/ailabel-me/user/info\.*',
+    url: '/user/info\.*',
     type: 'get',
     response: config => {
       const { token } = config.query
@@ -74,7 +74,7 @@ module.exports = [
 
   // user logout
   {
-    url: '/ailabel-me/user/logout',
+    url: '/user/logout',
     type: 'post',
     response: _ => {
       return {

@@ -22,6 +22,6 @@ module.exports = {
   },
   gitee: {
     isShow: false,
-    url: 'https://gitee.com/fuwenwei501/ailabel-me'
+    url: 'https://gitee.com/fuwenwei501/ailabel-me.git'
   }
 }

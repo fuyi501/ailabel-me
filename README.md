@@ -8,9 +8,9 @@
 本项目基于 [vue-admin-template](https://github.com/fuyi501/vue-admin-template) 和 [AILabel](https://github.com/dingyang9642/AILabel) 设计，可以标注车道线，区域等各种交通区域设施，用于配置智慧交通检测事件，设置车道的方向和区域的检测事件，应用于智慧交通融合感知系统。
 
 - [github 仓库](https://github.com/fuyi501/ailabel-me)
-- [github 在线预览](https://fuyi501.github.io/ailabel-me)
+- [github 在线预览](http://fuyi501.github.io/ailabel-me)
 - [gitee 仓库](https://gitee.com/fuwenwei501/ailabel-me.git)
-- [gitee 在线预览](https://gitee.com/fuwenwei501/ailabel-me)
+- [gitee 在线预览](http://fuwenwei501.gitee.io/ailabel-me)
 
 ## 安装
 
@@ -56,7 +56,17 @@ npm run build
 ## 部署
 
 ### GitHub Pages
+
 GitHub Pages 部署请看：https://cli.vuejs.org/zh/guide/deployment.html#github-pages
+
+部署的时候需要注意 `publicPath` 的配置：
+
+```js
+  publicPath: process.env.NODE_ENV === 'production' ? '/ailabel-me/' : '/',
+  // publicPath: '/',
+```
+
+运行 `sh deploy.sh` 进行部署
 
 ### Docker (Nginx)
 

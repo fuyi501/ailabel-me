@@ -32,18 +32,18 @@ module.exports = {
     overlay: {
       warnings: false,
       errors: true
-    }
+    },
     // 接口代理
-    // proxy: {
-    //   '/api-dev': {
-    //     target: 'http://localhost:8081',
-    //     ws: true,
-    //     changeOrigin: true
-    //   },
-    //   '/api-pro': {
-    //     target: 'http://localhost:8082'
-    //   }
-    // }
+    proxy: {
+      '/api-dev': {
+        target: 'http://localhost:8088',
+        ws: true,
+        changeOrigin: true
+      },
+      '/api-pro': {
+        target: 'http://localhost:8088'
+      }
+    }
   },
   configureWebpack: {
     // provide the app's title in webpack's name field, so that

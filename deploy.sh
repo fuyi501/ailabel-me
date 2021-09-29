@@ -20,6 +20,11 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # 部署到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:fuyi501/ailabel-me.git master:gh-pages
+# 如果后端接口是 http 协议的，在部署 pages 时可以取消 强制https，保证接口可以访问
+# 部署到 github
+git push -f git@github.com:fuyi501/ailabel-me.git master:gh-pagesx
+
+# 部署到 gitee
+git push -f https://gitee.com/fuwenwei501/ailabel-me.git master:gh-pages
 
 cd -
